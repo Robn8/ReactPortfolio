@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: white;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100%;
+  }
+  footer {
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    color: black
+  }
+  h2 {
+    color: black
+  }
+  a {
+    font-weight: 500;
+    color: white;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: black;
+    
+  }
+  button {
+    background-color: #1a1a1a;
+    color: white
+  }
+  button:hover {
+    background-color: white;
+    color: #1a1a1a;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    button {
+      background-color: white;
+    }
+}
