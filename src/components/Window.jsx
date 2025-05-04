@@ -6,9 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 const windowImages = [
     '/pik0.png',
     '/pik1.png',
-    '/pik2.png',
+    '/bpic.png',
     './pica.png.png',
-    './prog1.png.webp'
+    './pik2.png',
+    './game1.png'
 ];
 
 const sliderSettings = {
@@ -18,7 +19,7 @@ const sliderSettings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 8000
+    autoplaySpeed: 3000
 };
 
 const Window = () => {
@@ -37,7 +38,7 @@ const Window = () => {
             </div>
             <div class="flex justify-center mt-10 mb-5">
                 <a
-                    href="https://sight-productions.com/"
+                    href="https://github.com/Robn8"
                     target="blank"
                     className="bg-blue-500 text-white px-6 py-3 rounded-2xl text-lg hover:bg-blue-600 transition"
                 >
