@@ -4,12 +4,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const windowImages = [
-    '/pik0.png',
     '/pik1.png',
     '/bpic.png',
     './pica.png.png',
     './pik2.png',
-    './game1.png'
+    './game1.png',
+    './pik0.png'
 ];
 
 const sliderSettings = {
