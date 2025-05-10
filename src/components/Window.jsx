@@ -36,15 +36,23 @@ const Window = () => {
 
     
             </div>
-            <div class="flex justify-center mt-10 mb-5">
+            <div className="flex justify-center gap-x-4 mt-10 mb-5">
                 <a
                     href="https://github.com/Robn8"
-                    target="blank"
+                    target="_blank"
                     className="bg-blue-500 text-white px-6 py-3 rounded-2xl text-lg hover:bg-blue-600 transition"
                 >
-                See My Work
-                 </a>
+                    See My Work
+                </a>
+                <a
+                    href="/Resume_R_Natale.pdf"  // Place your resume PDF in the `public/` folder
+                    target="_blank"
+                    className="bg-green-500 text-white px-6 py-3 rounded-2xl text-lg hover:bg-green-600 transition"
+                >
+                    View Resume
+                </a>
             </div>
+
         </main>
     )
 }
