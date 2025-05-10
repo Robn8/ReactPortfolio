@@ -25,11 +25,11 @@ const sliderSettings = {
 const Window = () => {
     return (
         <main>
-            <div className="max-w-4xl mx-auto">
+            <div className="flex-1 max-w-4xl mx-auto w-full h-full">
                 <Slider {...sliderSettings}>
                     {windowImages.map((src, index) => (
                         <div key={index}>
-                            <img src={src} alt={`Screenshot ${index +1}`} className="w-full rounded-xl shadow-lg object-cover object-top h-100 " />
+                            <img src={src} alt={`Screenshot ${index +1}`} className="w-full rounded-xl  object-cover object-top h-100 " />
                         </div>
                     ))}
                 </Slider>
