@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 const windowImages = [
     '/pik1.png',
+    './p2p.png',
     '/bpic.png',
     './pica.png.png',
     './pik2.png',
     './game1.png',
-    './pik0.png'
 ];
 
 const sliderSettings = {
