@@ -18,7 +18,6 @@ function App() {
       <div className="flex-1">
         <Header />
         <Window />
-        <Projects />
       </div>
 
       <Footer />

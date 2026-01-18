@@ -1,60 +1,187 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AboutMe from "./AboutMe";
 
-
-const windowImages = [
-    '/pik1.png',
-    './p2p.png',
-    '/bpic.png',
-    './pica.png.png',
-    './pik2.png',
-    './game1.png',
+const slides = [
+  {
+    src: "/p2p.png",
+    title: "Promise2Papa",
+    desc: "Nonprofit platform helping caregivers & veterans access medical support.",
+    live: "https://promise2papa.netlify.app/", // replace with correct link
+    code: "https://github.com/Robn8/Promise", // replace with repo
+  }, 
+  {
+    src: "/illd.png",
+    title: "ILL-DEFINED",
+    desc: "Music streaming + uploads (React, AWS).",
+    live: "https://ill-defined.com/",
+    code: "https://github.com/jdbarrera/ill-defined",
+  },
+  {
+    src: "/bpic.png",
+    title: "Breakout",
+    desc: "Phaser.js arcade clone deployed on Netlify.",
+    live: "https://game-two.netlify.app/",
+    code: "https://github.com/Robn8", // replace with repo
+  },
 ];
 
 const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  pauseOnHover: true,
+  adaptiveHeight: true,
 };
 
+const featuredProjects = [
+    {
+      title: "BREAKOUT",
+      desc: "A classic Breakout clone built with Phaser.js and deployed on Netlify.",
+      live: "https://game-two.netlify.app/",
+      code: "https://github.com/Robn8", // replace with repo link
+      tags: ["Phaser.js", "JavaScript", "Netlify"],
+    },
+    {
+      title: "Promise2Papa",
+      desc: "A nonprofit platform helping caregivers and veterans access medical support.",
+      live: "https://ill-defined.com/", // replace with correct link if different
+      code: "https://github.com/Robn8", // replace with repo link
+      tags: ["React", "Full Stack", "Nonprofit"],
+    },
+    {
+      title: "ILL-DEFINED",
+      desc: "A music platform where users can upload and stream tracks using React + AWS.",
+      live: "https://ill-defined.com/",
+      code: "https://github.com/Robn8", // replace with repo link
+      tags: ["React", "AWS", "MERN"],
+    },
+  ];
+
 const Window = () => {
-    return (
-        <main>
-            <div className="flex-1 max-w-4xl mx-auto w-full h-full">
-                <Slider {...sliderSettings}>
-                    {windowImages.map((src, index) => (
-                        <div key={index}>
-                            <img src={src} alt={`Screenshot ${index +1}`} className="w-full rounded-xl  object-cover object-top h-100 " />
-                        </div>
-                    ))}
-                </Slider>
+  return (
+    <main>
+      <div className="flex-1 max-w-4xl mx-auto w-full">
+        <Slider {...sliderSettings}>
+          {slides.map((s, i) => (
+            <div key={i} className="px-2">
+              <div className="relative overflow-hidden rounded-2xl shadow-md">
+                <img
+                  src={s.src}
+                  alt={`${s.title} screenshot`}
+                  className="w-full h-[420px] md:h-[520px] object-cover object-top"
+                  loading="lazy"
+                />
 
-    
+                <div className="absolute inset-x-0 bottom-0 bg-black/60 p-4">
+                  <div className="text-white">
+                    <h3 className="text-xl font-semibold">{s.title}</h3>
+                    <p className="text-sm opacity-90">{s.desc}</p>
+
+                    <div className="mt-3 flex gap-3">
+                      <a
+                        href={s.live}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="bg-white text-black px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href={s.code}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="border border-white text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-white/10 transition"
+                      >
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="flex justify-center gap-x-4 mt-10 mb-5">
+          ))}
+        </Slider>
+      </div>
+
+      <div className="flex justify-center gap-x-4 mt-10 mb-5">
+        <a
+          href="https://github.com/Robn8"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
+        >
+          View GitHub
+        </a>
+        <a
+          href="/Resume_R_Natale.pdf"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="border border-slate-900 text-slate-900 px-6 py-3 rounded-2xl text-lg hover:bg-slate-900 hover:text-white transition"
+        >
+          Resume
+        </a>
+      </div>
+
+      <AboutMe />
+
+      {/* Featured Projects */}
+      <section className="max-w-6xl mx-auto w-full px-4 pb-14">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-semibold">Featured Projects</h2>
+          <p className="text-gray-600 mt-2">
+            A few projects that showcase my work across web apps and game development.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {featuredProjects.map((p) => (
+            <div key={p.title} className="bg-gray-300 p-6 rounded-2xl shadow-md">
+              <h3 className="text-2xl font-semibold mb-2 text-center">{p.title}</h3>
+              <p className="text-gray-700 text-center">{p.desc}</p>
+
+              {/* Tags */}
+              <div className="flex flex-wrap justify-center gap-2 mt-4">
+                {p.tags.map((t) => (
+                  <span
+                    key={t}
+                    className="text-sm bg-white/70 px-3 py-1 rounded-full"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              {/* Buttons */}
+              <div className="flex justify-center gap-3 mt-6">
                 <a
-                    href="https://github.com/Robn8"
-                    target="_blank"
-                    className="bg-blue-500 text-white px-6 py-3 rounded-2xl text-lg hover:bg-blue-600 transition"
+                  href={p.live}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="bg-slate-900 text-white px-4 py-2 rounded-xl hover:opacity-90 transition"
                 >
-                    See My Work
+                  Live
                 </a>
                 <a
-                    href="/Resume_R_Natale.pdf"  // Place your resume PDF in the `public/` folder
-                    target="_blank"
-                    className="bg-green-500 text-white px-6 py-3 rounded-2xl text-lg hover:bg-green-600 transition"
+                  href={p.code}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="border border-slate-900 text-slate-900 px-4 py-2 rounded-xl hover:bg-slate-900 hover:text-white transition"
                 >
-                    View Resume
+                  Code
                 </a>
+              </div>
             </div>
-
-        </main>
-    )
-}
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+};
 
 export default Window;
