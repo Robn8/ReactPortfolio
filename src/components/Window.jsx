@@ -75,7 +75,7 @@ const Window = () => {
                 <img
                   src={s.src}
                   alt={`${s.title} screenshot`}
-                  className="w-full h-[420px] md:h-[520px] object-cover object-top"
+                  className="w-full aspect-video object-cover object-top"
                   loading="lazy"
                 />
 
@@ -110,12 +110,12 @@ const Window = () => {
         </Slider>
       </div>
 
-      <div className="flex justify-center gap-x-4 mt-10 mb-5">
+      <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 mt-10 mb-5 px-4">
         <a
           href="https://github.com/Robn8"
           target="_blank"
           rel="noreferrer noopener"
-          className="bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
+          className="w-full sm:w-auto bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
         >
           GitHub
         </a>
@@ -123,13 +123,13 @@ const Window = () => {
           href="/res_rn1-1.pdf"
           target="_blank"
           rel="noreferrer noopener"
-          className="border border-slate-900 text-slate-900 px-6 py-3 rounded-2xl text-lg hover:bg-slate-900 hover:text-white transition"
+          className="w-full sm:w-auto border border-slate-900 text-slate-900 px-6 py-3 rounded-2xl text-lg hover:bg-slate-900 hover:text-white transition"
         >
           Resume
         </a>
         <a
           href="#contact"
-          className="bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
+          className="w-full sm:w-auto bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
         >
           Contact
         </a>
