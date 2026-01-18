@@ -8,8 +8,8 @@ const slides = [
     src: "/p2p.png",
     title: "Promise2Papa",
     desc: "Nonprofit platform helping caregivers & veterans access medical support.",
-    live: "https://promise2papa.netlify.app/", // replace with correct link
-    code: "https://github.com/Robn8/Promise", // replace with repo
+    live: "https://promise2papa.netlify.app/", 
+    code: "https://github.com/Robn8/Promise", 
   }, 
   {
     src: "/illd.png",
@@ -23,7 +23,7 @@ const slides = [
     title: "Breakout",
     desc: "Phaser.js arcade clone deployed on Netlify.",
     live: "https://game-two.netlify.app/",
-    code: "https://github.com/Robn8", // replace with repo
+    code: "https://github.com/Robn8/Breakout", 
   },
 ];
 
@@ -44,21 +44,21 @@ const featuredProjects = [
       title: "BREAKOUT",
       desc: "A classic Breakout clone built with Phaser.js and deployed on Netlify.",
       live: "https://game-two.netlify.app/",
-      code: "https://github.com/Robn8", // replace with repo link
+      code: "https://github.com/Robn8/Breakout", 
       tags: ["Phaser.js", "JavaScript", "Netlify"],
     },
     {
       title: "Promise2Papa",
       desc: "A nonprofit platform helping caregivers and veterans access medical support.",
-      live: "https://ill-defined.com/", // replace with correct link if different
-      code: "https://github.com/Robn8", // replace with repo link
+      live: "https://promise2papa.netlify.app/",
+      code: "https://github.com/Robn8/Promise", 
       tags: ["React", "Full Stack", "Nonprofit"],
     },
     {
       title: "ILL-DEFINED",
       desc: "A music platform where users can upload and stream tracks using React + AWS.",
       live: "https://ill-defined.com/",
-      code: "https://github.com/Robn8", // replace with repo link
+      code: "https://github.com/jdbarrera/ill-defined", 
       tags: ["React", "AWS", "MERN"],
     },
   ];
