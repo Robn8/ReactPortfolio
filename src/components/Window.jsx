@@ -115,7 +115,7 @@ const Window = () => {
           href="https://github.com/Robn8"
           target="_blank"
           rel="noreferrer noopener"
-          className="w-full sm:w-auto bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
+          className="w-full sm:w-auto sm:text-center bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
         >
           GitHub
         </a>
