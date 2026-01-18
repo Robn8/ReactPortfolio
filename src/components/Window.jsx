@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AboutMe from "./AboutMe";
+import Contact from "./Contact";
 
 const slides = [
   {
@@ -180,6 +181,9 @@ const Window = () => {
           ))}
         </div>
       </section>
+
+      <Contact />
+
     </main>
   );
 };
