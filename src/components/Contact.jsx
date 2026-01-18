@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Checkmark from "./Checkmark";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -84,6 +85,8 @@ const Contact = () => {
         ) : (
           /* Success State */
           <div className="py-12">
+            <Checkmark />
+
             <h3 className="text-3xl font-semibold mb-3">
               Thanks for reaching out!
             </h3>
