@@ -3,16 +3,30 @@ const AboutMe = () => {
       <section className="max-w-6xl mx-auto w-full px-4 py-16">
         <div className="flex flex-col md:flex-row items-center gap-10">
           
-          {/* Profile Image */}
-          <div className="flex-shrink-0">
-            <a href="https://www.linkedin.com/in/robert-natale-56785b145/" target="blank">
-                <img
+        {/* Profile Image */}
+        <div className="flex-shrink-0 text-center">
+            <a
+                href="https://www.linkedin.com/in/robert-natale-56785b145/"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+            <img
                 src="/face1.jpg"
                 alt="Photo of Rob Natale"
-                className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-md hover:scale-105"
-                />
+                className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-md transition hover:scale-105"
+            />
             </a>
-          </div>
+
+            <a
+                href="https://www.linkedin.com/in/robert-natale-56785b145/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-block mt-4 text-sm font-medium text-slate-900 border border-slate-900 px-4 py-2 rounded-full hover:bg-slate-900 hover:text-white transition"
+            >
+                    Connect on LinkedIn
+            </a>
+        </div>
+
   
           {/* Text Content */}
           <div className="text-center md:text-left">
