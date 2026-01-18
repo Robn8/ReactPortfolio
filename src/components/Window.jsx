@@ -117,7 +117,7 @@ const Window = () => {
           rel="noreferrer noopener"
           className="bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
         >
-          View GitHub
+          GitHub
         </a>
         <a
           href="/Resume_R_Natale.pdf"
@@ -127,6 +127,13 @@ const Window = () => {
         >
           Resume
         </a>
+        <a
+          href="#contact"
+          className="bg-slate-900 text-white px-6 py-3 rounded-2xl text-lg hover:opacity-90 transition"
+        >
+          Contact
+        </a>
+
       </div>
 
       <AboutMe />
