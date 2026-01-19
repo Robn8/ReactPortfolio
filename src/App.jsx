@@ -12,7 +12,7 @@ import Window from './components/Window';
 
 function App() {
   return (
-    <div id="top" className="flex flex-col min-h-screen bg-gray-200 text-gray-900 ">
+    <div id="home" className="flex flex-col min-h-screen bg-gray-200 text-gray-900 ">
       <Nav />
       <div className="flex-1">
         <Header />
