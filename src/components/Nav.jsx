@@ -27,9 +27,18 @@ const Nav = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="h-16 flex items-center justify-between">
           {/* Brand */}
-          <a href="#top" className="font-semibold tracking-tight text-lg">
-            Rob Natale
-          </a>
+          <a
+            href="#top"
+            className="flex items-center gap-2 font-semibold tracking-tight text-lg"
+            >
+                <img
+                    src="/favicon-32x32.png"
+                    alt=""
+                    className="w-6 h-6 object-contain"
+                />
+                Rob Natale
+            </a>
+
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-2 text-sm">
