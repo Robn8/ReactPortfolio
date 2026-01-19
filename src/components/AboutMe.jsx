@@ -1,6 +1,6 @@
 const AboutMe = () => {
     return (
-      <section className="max-w-6xl mx-auto w-full px-4 py-16">
+      <section id="about" className="scroll-mt-24 max-w-6xl mx-auto w-full px-4 py-16">
         <div className="flex flex-col md:flex-row items-center gap-10">
           
         {/* Profile Image */}
@@ -33,7 +33,7 @@ const AboutMe = () => {
             <h2 className="text-3xl font-semibold mb-4">About Me</h2>
   
             <p className="text-gray-700 max-w-2xl">
-              I’m a junior full-stack developer with a strong focus on React and JavaScript,
+              I’m a full-stack developer with a strong focus on React and JavaScript,
               passionate about building clean, user-friendly applications that solve real
               problems. I enjoy working across the stack, from intuitive UI design to backend
               logic and cloud deployment.

@@ -16,3 +16,5 @@ html {
 h1 {
   font-size: 34;
 }
+
+html { scroll-behavior: smooth; }

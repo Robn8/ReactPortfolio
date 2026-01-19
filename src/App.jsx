@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Nav from './components/Nav';
 
 // Screens
 import Header from './components/Header';
@@ -10,20 +11,16 @@ import Window from './components/Window';
 
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="flex flex-col min-h-screen bg-gray-200 text-gray-900 overflow-x-hidden">
-
+    <div id="top" className="flex flex-col min-h-screen bg-gray-200 text-gray-900 ">
+      <Nav />
       <div className="flex-1">
         <Header />
         <Window />
       </div>
-
       <Footer />
-    
-  </div>
-  )
+    </div>
+  );
 }
 
 export default App

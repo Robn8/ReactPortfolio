@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="max-w-4xl mx-auto w-full px-4 py-20">
+    <section id="contact" className="scroll-mt-24 max-w-4xl mx-auto w-full px-4 py-20">
       <div className="bg-gray-100 rounded-3xl p-8 md:p-12 shadow-md text-center">
         
         {!submitted ? (

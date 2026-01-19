@@ -139,7 +139,7 @@ const Window = () => {
       <AboutMe />
 
       {/* Featured Projects */}
-      <section className="max-w-6xl mx-auto w-full px-4 pb-14">
+      <section id="projects" className="scroll-mt-24 max-w-6xl mx-auto w-full px-4 pb-14">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-semibold">Featured Projects</h2>
           <p className="text-gray-600 mt-2">
