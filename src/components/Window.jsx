@@ -6,12 +6,12 @@ import Contact from "./Contact";
 
 const slides = [
   {
-    src: "/p2p.png",
-    title: "Promise2Papa",
-    desc: "Nonprofit platform helping caregivers & veterans access medical support.",
-    live: "https://promise2papa.netlify.app/", 
-    code: "https://github.com/Robn8/Promise", 
-  }, 
+    src: "/serf1.png",
+    title: "Serfs Shower Doors",
+    desc: "Responsive B2B web application (React, TailwindCSS, Node.js).",
+    live: "https://serfassociates.com/",
+    code: "https://github.com/Robn8/serfs",
+  },
   {
     src: "/illd.png",
     title: "ILL-DEFINED",
@@ -19,6 +19,13 @@ const slides = [
     live: "https://ill-defined.com/",
     code: "https://github.com/jdbarrera/ill-defined",
   },
+  {
+    src: "/p2p.png",
+    title: "Promise2Papa",
+    desc: "Nonprofit platform helping caregivers & veterans access medical support.",
+    live: "https://promise2papa.netlify.app/", 
+    code: "https://github.com/Robn8/Promise", 
+  }, 
   {
     src: "/bpic.png",
     title: "Breakout",
