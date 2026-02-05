@@ -49,25 +49,32 @@ const sliderSettings = {
 
 const featuredProjects = [
     {
-      title: "BREAKOUT",
-      desc: "A classic Breakout clone built with Phaser.js and deployed on Netlify.",
-      live: "https://game-two.netlify.app/",
-      code: "https://github.com/Robn8/Breakout", 
-      tags: ["Phaser.js", "JavaScript", "Netlify"],
+      title: "Serfs Shower Doors",
+      desc: "Responsive B2B website for a glass company, developed with React, Tailwind CSS and Node.js.",
+      live: "https://serfassociates.com/",
+      code: "https://github.com/Robn8/serfs", 
+      tags: ["React", "JavaScript", "Tailwind CSS"],
     },
     {
       title: "Promise2Papa",
       desc: "A nonprofit platform helping caregivers and veterans access medical support.",
       live: "https://promise2papa.netlify.app/",
       code: "https://github.com/Robn8/Promise", 
-      tags: ["React", "Full Stack", "Nonprofit"],
+      tags: ["React", "Node.js", "Nonprofit"],
     },
     {
       title: "ILL-DEFINED",
       desc: "A music platform where users can upload and stream tracks using React + AWS.",
       live: "https://ill-defined.com/",
       code: "https://github.com/jdbarrera/ill-defined", 
-      tags: ["React", "AWS", "MERN"],
+      tags: ["Full Stack", "AWS", "JavaScript"],
+    },
+    {
+      title: "BREAKOUT",
+      desc: "A classic Breakout clone built with Phaser.js and deployed using Netlify.",
+      live: "https://game-two.netlify.app/",
+      code: "https://github.com/Robn8/Breakout", 
+      tags: ["Phaser.js", "JavaScript", "Netlify"],
     },
   ];
 
@@ -154,7 +161,7 @@ const Window = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {featuredProjects.map((p) => (
             <div key={p.title} className="bg-gray-300 p-6 rounded-2xl shadow-md">
               <h3 className="text-2xl font-semibold mb-2 text-center">{p.title}</h3>
