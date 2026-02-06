@@ -48,36 +48,6 @@ const sliderSettings = {
   adaptiveHeight: true,
 };
 
-const featuredProjects = [
-    {
-      title: "Serfs Shower Doors",
-      desc: "Responsive B2B website for a glass company, developed with React, Tailwind CSS and Node.js.",
-      live: "https://serfassociates.com/",
-      code: "https://github.com/Robn8/serfs", 
-      tags: ["React", "JavaScript", "Tailwind CSS"],
-    },
-    {
-      title: "Promise2Papa",
-      desc: "A nonprofit platform helping caregivers and veterans access medical support.",
-      live: "https://promise2papa.netlify.app/",
-      code: "https://github.com/Robn8/Promise", 
-      tags: ["React", "Node.js", "Nonprofit"],
-    },
-    {
-      title: "ILL-DEFINED",
-      desc: "A music platform where users can upload and stream tracks using React + AWS.",
-      live: "https://ill-defined.com/",
-      code: "https://github.com/jdbarrera/ill-defined", 
-      tags: ["Full Stack", "AWS", "JavaScript"],
-    },
-    {
-      title: "BREAKOUT",
-      desc: "A classic Breakout clone built with Phaser.js and deployed using Netlify.",
-      live: "https://game-two.netlify.app/",
-      code: "https://github.com/Robn8/Breakout", 
-      tags: ["Phaser.js", "JavaScript", "Netlify"],
-    },
-  ];
 
 const Window = () => {
   return (
