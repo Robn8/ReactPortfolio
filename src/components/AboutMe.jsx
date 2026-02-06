@@ -1,6 +1,6 @@
 const AboutMe = () => {
     return (
-      <section id="about" className="scroll-mt-24 max-w-6xl mx-auto w-full px-4 py-16">
+      <section id="about" className="scroll-mt-24 max-w-6xl mx-auto w-full px-4 bg-white/70 backdrop-blur py-20 mb-12 mt-12">
         <div className="flex flex-col md:flex-row items-center gap-10">
           
         {/* Profile Image */}
