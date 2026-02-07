@@ -23,7 +23,7 @@ const Nav = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur">
       <div className="max-w-6xl mx-auto px-4">
         <div className="h-16 flex items-center justify-between">
           {/* Brand */}
@@ -42,7 +42,7 @@ const Nav = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-2 text-sm">
-            <NavLink href="#home">Home</NavLink>
+            <NavLink href="#top">Home</NavLink>
             <NavLink href="#about">About</NavLink>
             <NavLink href="#projects">Projects</NavLink>
             <NavLink href="#contact">Contact</NavLink>
