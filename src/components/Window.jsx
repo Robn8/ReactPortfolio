@@ -105,7 +105,7 @@ const Window = () => {
           GitHub
         </a>
         <a
-          href="/res_rn1-1.pdf"
+          href="/res_robN.pdf"
           target="_blank"
           rel="noreferrer noopener"
           className="w-full sm:w-auto border border-slate-900 text-slate-900 px-6 py-3 rounded-2xl text-lg hover:bg-slate-900 hover:text-white transition"

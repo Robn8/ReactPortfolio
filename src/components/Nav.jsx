@@ -48,7 +48,7 @@ const Nav = () => {
             <NavLink href="#contact">Contact</NavLink>
 
             <a
-              href="/res_rn1-1.pdf"
+              href="/res_robN.pdf"
               target="_blank"
               rel="noreferrer noopener"
               className="ml-2 bg-slate-900 text-white px-4 py-2 rounded-xl hover:opacity-90 transition"
