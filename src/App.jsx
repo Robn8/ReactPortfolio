@@ -14,7 +14,6 @@ function App() {
   return (
     <div id="top" className="flex flex-col min-h-screen bg-gray-200 text-gray-900 overflow-x-hidden">
       <Nav />
-      <Header />
       <Window />
       <Footer />
     </div>
