@@ -7,7 +7,7 @@ const featuredProjects = [
     code: "https://github.com/Robn8/Thelonious",
     tags: ["React Native", "Expo", "JavaScript"],
     featured: true,
-    projectType: "Full Stack App",
+    projectType: "React Native Mobile App",
     showLive: false,
     showCode: true,
   },
