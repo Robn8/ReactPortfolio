@@ -11,9 +11,11 @@ const slides = [
     title: "Thelonious",
     desc: "A music education app for learners of all ages, built with React Native and Expo to deliver an engaging, accessible mobile experience.",
     code: "https://github.com/Robn8/Thelonious",
+    live: "https://apps.apple.com/us/app/thelonious/id6760714389",
     tag: "Mobile App",
-    showLive: false,
+    showLive: true,
     showCode: true,
+    liveLabel: "View in App Store",
     imageFit: "contain",
   },
   {
