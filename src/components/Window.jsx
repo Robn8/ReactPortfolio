@@ -19,6 +19,18 @@ const slides = [
     imageFit: "contain",
   },
   {
+    src: "/promiseShot1.png",
+    title: "Promise2Papa",
+    desc: "A nonprofit platform helping caregivers and veterans access medical support.",
+    live: "https://promise2papa.netlify.app/",
+    code: "https://github.com/Robn8/Promise",
+    tag: "Nonprofit Platform",
+    showLive: true,
+    showCode: true,
+    liveLabel: "Live Demo",
+    imageFit: "cover",
+  },
+  {
     src: "/serf1.png",
     title: "Serfs Shower Doors",
     desc: "Responsive B2B web application built with React, Tailwind CSS, and Node.js.",
@@ -41,30 +53,6 @@ const slides = [
     liveLabel: "Live",
     imageFit: "cover",
   },
-  {
-    src: "/p2p.png",
-    title: "Promise2Papa",
-    desc: "A nonprofit platform helping caregivers and veterans access medical support.",
-    live: "https://promise2papa.netlify.app/",
-    code: "https://github.com/Robn8/Promise",
-    tag: "Nonprofit Platform",
-    showLive: true,
-    showCode: true,
-    liveLabel: "Live Demo",
-    imageFit: "cover",
-  },
-  {
-    src: "/bpic.png",
-    title: "Breakout",
-    desc: "A classic Breakout clone built with Phaser.js and deployed using Netlify.",
-    live: "https://game-two.netlify.app/",
-    code: "https://github.com/Robn8/Breakout",
-    tag: "Browser Game",
-    showLive: true,
-    showCode: true,
-    liveLabel: "Live Demo",
-    imageFit: "cover",
-  },
 ];
 
 const sliderSettings = {
@@ -84,7 +72,7 @@ const Hero = () => {
   return (
     <main>
       <section className="px-4 pt-12 pb-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto mt-8">
           <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/80 backdrop-blur-xl shadow-2xl">
             <div className="absolute -top-20 -left-20 h-60 w-60 rounded-full bg-cyan-300/20 blur-3xl" />
             <div className="absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-indigo-400/20 blur-3xl" />
