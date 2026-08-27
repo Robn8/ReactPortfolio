@@ -109,7 +109,7 @@ const Hero = () => {
                 </a>
 
                 <a
-                  href="/res_robN.pdf"
+                  href="resume_robertN-2.pdf"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-base md:text-lg font-medium text-slate-900 transition duration-300 hover:-translate-y-0.5 hover:bg-slate-100"
